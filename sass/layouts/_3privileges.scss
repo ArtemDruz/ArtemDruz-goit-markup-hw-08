@@ -5,11 +5,27 @@
 
 .privileges {
     display: flex;
+    flex-wrap: wrap;
 }
 .privileges__li {
+    width: 100%;
+    
+
+    margin-bottom: 30px;
+
+
+@media screen and (min-width: 768px) {
+    width: calc((100% - 30px) / 2);
+    &:not(:nth-child(2n)) {
+        margin-right: 30px;
+    }
+}  
+
+@media screen and (min-width: 1200px) {
     width: calc((100% - 90px) / 4);
-    &:not(:last-child){
-    margin-right: 30px;
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
 }
 }
 
