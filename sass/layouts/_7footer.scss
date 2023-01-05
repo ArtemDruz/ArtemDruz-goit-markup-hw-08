@@ -6,7 +6,7 @@
     padding-top: 60px;
     padding-bottom: 60px;
     flex-wrap: wrap;
-    @media screen and (min-width: 358px) and (max-width:768px) {
+    @media screen and (min-width: 358px) and (max-width:767px) {
         .footer-nav {
             justify-content: center;
             text-align: center;
@@ -39,7 +39,7 @@
         justify-content: center;
         text-align: center;
         flex-direction: column;
-        m
+        
         
     }
     .footer-input {

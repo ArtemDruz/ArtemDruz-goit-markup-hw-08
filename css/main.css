@@ -1063,7 +1063,7 @@ img {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-@media screen and (min-width: 358px) and (max-width: 768px) {
+@media screen and (min-width: 358px) and (max-width: 767px) {
   .footer .footer-nav {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
