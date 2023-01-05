@@ -2,21 +2,38 @@
 .offers {
     display: flex;
     flex-wrap: wrap;
+    gap: 30px;
 }
-.offers-li {
-    width: calc((100% - 60px) / 3);
-    margin-bottom: 30px;
-    border: 1px solid #EEEEEE;
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+@media screen and (min-width: 768px) {
+    .offers-li {
+        width: calc((100% - 30px) / 2);
+        // margin-bottom: 30px;
+        border: 1px solid #EEEEEE;
+        transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
-.offers-li:not(:nth-child(3n)) {
-    margin-right: 30px;
+
+.offers-li:nth-last-child(-n+2) {
+    margin-bottom: 0px;
 }
+}
+@media screen and (min-width: 1200px) {
+    .offers-li {
+        width: calc((100% - 60px) / 3);
+
+        border: 1px solid #EEEEEE;
+        transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+
 .offers-li:nth-last-child(-n+3) {
     margin-bottom: 0px;
 }
+}
+
+
 
 .offers-li:hover,
 .offers-li:focus {
