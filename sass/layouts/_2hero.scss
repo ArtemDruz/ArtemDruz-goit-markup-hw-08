@@ -13,6 +13,11 @@
     max-width: 1600px;
     margin: 0 auto;
     gap: 60px;
+    @media (min-width: 480px) {
+        .hero {
+            background-image: url('../images/header_img.jpg');
+        }
+    }
     @media (min-resolution: 2dppx) {
         .hero {
             background-image: url('../images/header_img@2x.jpg');
@@ -29,7 +34,7 @@
             background-image: url('../images/2header_img@2x.jpg');
         }
     }
-    @media (min-width: 768px) {
+    @media (min-width: 1200px) {
         .hero {
             background-image: url('../images/3header_img.jpg');
         }
