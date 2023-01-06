@@ -22,14 +22,14 @@
     
     .footer-input {
         margin-bottom: 20px;
-        width: 450px;
+        width: 100%;
     }
 }
 @media screen and (min-width: 768px) and (max-width: 1200px) {
     .footer-nav {
         justify-content: center;
         text-align: center;
-        margin-right: 165px;
+    
     }
     .footer-soc {
         justify-content: center;
@@ -59,11 +59,15 @@
     align-items: baseline;
     flex-wrap: wrap;
     justify-content: center;
-    gap:60px
+    gap:60px;
+
+    @media screen and (min-width: 768px)  and (max-width: 1200px) {
+        justify-content:space-around; 
+    }
 }
 .footer-nav {
     min-width: 231px;
-
+    text-align: center;
 }
 .foot-logo {
     display: block;
@@ -109,9 +113,9 @@
 
 /* друга частина футера */
 
-// // .footer-soc {
-//     margin-left: 70px;
-// }
+.footer-soc {
+    text-align: center;
+}
 .footer-p {
 font-weight: 700;
 line-height: 1.14;
@@ -158,9 +162,11 @@ color: var(--white-color);
     fill: var(--white-color);}
 
 /* footer-actions */
-// .footer-email {    
-    // margin-left: 93px;
-// }
+.footer-email {    
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
 .footer-label {
     font-weight: 700;
     line-height: 1.14;
@@ -175,7 +181,8 @@ color: var(--white-color);
     justify-content: center;
 }
 .footer-input {
-    width: 358px;
+    width: 100%;
+    margin-bottom: 20px;
     height: 50px;
     font-weight: 400;
     font-size: 16px;

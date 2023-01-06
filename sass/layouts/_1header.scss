@@ -17,6 +17,7 @@
     font-size: 26px;
     line-height: 1.19;
     text-decoration: none;
+
 }
 /* перша частина логотипа */
 .part {
@@ -88,10 +89,11 @@
     
 .contact {
     display: block;
-    padding-left: 15px;
+    margin-left: auto;
 
 }
 .contact .contact-link {
+    
     display: block;
     align-items: center;
     color: var(--primary-text-color);
@@ -104,7 +106,9 @@
     &:not(:last-child) {
         padding-bottom: 10px;
     }
-
+    @media screen and (min-width: 768px) {
+        font-size: 12px;
+    }
 }
 .pad {
     padding-bottom: 10px
@@ -126,9 +130,9 @@
 
 
 
-.contact-li:not(:last-child) {
-    margin-right: 40px;
-}
+// .contact-li:not(:last-child) {
+//     margin-right: 40px;
+// }
 
 @media screen and (min-width: 1200px) {
     
@@ -223,12 +227,15 @@ position: relative;
 }
 }
 .menu-button {
-
+    width: 100%;
+    height: 100%;
+    top: 0;
     display: inline-flex;
-
+    
     padding: 0;
     border: none;
     background-color: #fff;
+    
     
     @media screen and (min-width: 767px) {
         display: none;
@@ -301,22 +308,6 @@ position: relative;
 .menu-address-link {
     text-decoration: none;
     display: flex;
-    width: 296px;
-    height: 40px;
-    left: 40px;
-    font-weight: 500;
-    font-size: 34px;
-    line-height: 40px;
-
-    letter-spacing: 0.02em;
-    color: var(--accent-color);
-
-}
-
-.menu-tel-link {
-    text-decoration: none;
-    display: flex;
-    width: 231px;
     height: 28px;
     left: 40px;
 
@@ -326,6 +317,25 @@ position: relative;
     letter-spacing: 0.02em;
 
     color:var(--primary-text-color)
+}
+
+
+
+.menu-tel-link {    
+    text-decoration: none;
+    display: flex;
+    height: 40px;
+    left: 40px;
+    font-weight: 500;
+    font-size: 29px;
+    line-height: 40px;
+
+    letter-spacing: 0.02em;
+    color: var(--accent-color);
+
+    @media screen and (min-width: 480px) {
+        font-size: 34px;
+    }
 }
 
 .input-line {
@@ -358,10 +368,10 @@ position: relative;
     margin-bottom: 306px;
 }
 .menu-address-li {
-    margin-bottom: 32px;
+    margin-bottom: 64px;
 }
 .menu-tel-li {
-    margin-bottom: 64px;
+    margin-bottom: 32px;
 }
 .soc-net {
     margin-bottom: 48px;

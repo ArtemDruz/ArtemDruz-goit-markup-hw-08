@@ -66,14 +66,14 @@
                                 <li class="menu-li"><a href="./index.html" class="menu-link">Контакти</a></li>
                             </ul>
                             <ul class="menu-contact">
-                                <li class="menu-address-li">
-                                    <a href="info@devstudio.com" class="menu-address-link">
-                                        info@devstudio.com
-                                    </a>
-                                </li>
                                 <li class="menu-tel-li">
                                     <a href="tel:+380961111111" class="menu-tel-link">
                                         +38 096 111 11 11
+                                    </a>
+                                </li>
+                                <li class="menu-address-li">
+                                    <a href="info@devstudio.com" class="menu-address-link">
+                                        info@devstudio.com
                                     </a>
                                 </li>
                             <ul class="soc-net">
@@ -145,32 +145,51 @@
                 </div>
             </section>
 <!-- робота фото -->
-                <!-- <section class="section about">
+                <section class="section about">
                     <div class="container">
                         <h2 class="section-title">Чим ми займаємося</h2>
                         <ul class="work">
                             <li class="work__li">
-                                <img src="./images/img.jpg" alt="комп'ютер" width="370">
+                                <picture>
+                                    <source srcset="../images/img_0.jpg 1x,../images/img_0@2x.jpg 2x" media="(min-width:1200px)"/>
+                                    <img srcset="../images/img_0.jpg 1x, ../images/img_0@2x.jpg 2x" src="../images/img_1.jpg"
+                                    alt="комп'ютер"/>
+                                </picture>
                                 <p class="work__p">Десктопні додатки</p>
                             </li>
                             <li class="work__li">
-                                <img src="./images/img_2.jpg" alt="техніка" width="370">
+                                <picture>
+                                    <source srcset="../images/img_2.jpg 1x,../images/img_2@2x.jpg 2x" media="(min-width:1200px)"/>
+                                    <img srcset="../images/img_2.jpg 1x, ../images/img_2@2x.jpg 2x" src="../images/img_1.jpg"
+                                    alt="техніка"/>
+                                </picture>
                                 <p class="work__p">Мобільні додатки</p>
                             </li>
                             <li class="work__li">
+                                <picture>
+                                    <source srcset="../images/img_3.jpg 1x,../images/img_3@2x.jpg 2x" media="(min-width:1200px)"/>
+                                    <img srcset="../images/img_3.jpg 1x, ../images/img_3@2x.jpg 2x" src="../images/img_1.jpg"
+                                    alt="смартфон"/>
+                                </picture>
                                 <img src="./images/img_3.jpg" alt="смартфон" width="370">
                                 <p class="work__p">Дизайнерські рішення</p>
                             </li>
                         </ul>
                     </div>
-                </section> -->
+                </section>
 <!-- команда -->
                 <section class="section team-bc">
                     <div class="container ">
                     <h2 class="section-title">Наша команда</h2>
                     <ul class="team">
                         <li class="team-li">
-                            <img src="./images/img_1.jpg" alt="Ігор Дем'яненко" width="270">
+                            <picture>
+                                <source srcset="../images/img_1.jpg 1x,../images/img_1@2x.jpg 2x" media="(min-width:1200px)"/>
+                                <source srcset="../images/2img_1.jpg 1x, ../images/2img_1@2x.jpg 2x" media="(min-width:768px)"/>
+                                <source srcset="../images/3img_1.jpg 1x, ../images/3img_1@2x.jpg 2x" media="(max-width:767px)"/>
+                                <img srcset="../images/img_1.jpg 1x, ../images/img_1@2x.jpg 2x" src="../images/img_1.jpg"
+                                alt="Ігор Дем'яненко"/>
+                            </picture>
                             <h3 class="team-title">Ігор Дем'яненко</h3>
                             <p lang="en" class="team-position">Product Designer</p>
                             <ul class="team-soc-list">
@@ -213,7 +232,13 @@
                             </ul>
                         </li>
                         <li class="team-li">
-                            <img src="./images/img_4.jpg" alt="Ольга Рєпіна" width="270">
+                            <picture>
+                                <source srcset="../images/img_4.jpg 1x,../images/img_4@2x.jpg 2x" media="(min-width:1200px)"/>
+                                <source srcset="../images/2img_4.jpg 1x, ../images/2img_4@2x.jpg 2x" media="(min-width:768px)"/>
+                                <source srcset="../images/3img_4.jpg 1x, ../images/3img_4@2x.jpg 2x" media="(max-width:767px)"/>
+                                <img srcset="../images/img_4.jpg 1x, ../images/img_4@2x.jpg 2x" src="../images/img_1.jpg"
+                                alt="Ольга Рєпіна"/>
+                            </picture>                            
                             <h3 class="team-title">Ольга Рєпіна</h3>
                             <p lang="en" class="team-position">Frontend Developer</p>
                             <ul class="team-soc-list">
@@ -256,7 +281,13 @@
                             </ul>
                         </li>
                         <li class="team-li">
-                            <img src="./images/img_5_1.jpg" alt="Микола Тарасов" width="270">
+                            <picture>
+                                <source srcset="../images/img_5.jpg 1x,../images/img_5@2x.jpg 2x" media="(min-width:1200px)"/>
+                                <source srcset="../images/2img_5.jpg 1x, ../images/2img_5@2x.jpg 2x" media="(min-width:768px)"/>
+                                <source srcset="../images/3img_5.jpg 1x, ../images/3img_5@2x.jpg 2x" media="(max-width:767px)"/>
+                                <img srcset="../images/img_5.jpg 1x, ../images/img_5@2x.jpg 2x" src="../images/img_1.jpg"
+                                alt="Микола Тарасов"/>
+                            </picture> 
                             <h3 class="team-title">Микола Тарасов</h3>
                             <p lang="en" class="team-position">Marketing</p>
                             <ul class="team-soc-list">
@@ -299,7 +330,13 @@
                             </ul>
                         </li>
                         <li class="team-li">
-                            <img src="./images/img_6_1.jpg" alt="Михайло Єрмаков" width="270">
+                            <picture>
+                                <source srcset="../images/img_6.jpg 1x,../images/img_6@2x.jpg 2x" media="(min-width:1200px)"/>
+                                <source srcset="../images/2img_6.jpg 1x, ../images/2img_6@2x.jpg 2x" media="(min-width:768px)"/>
+                                <source srcset="../images/3img_6.jpg 1x, ../images/3img_6@2x.jpg 2x" media="(max-width:767px)"/>
+                                <img srcset="../images/img_6.jpg 1x, ../images/img_6@2x.jpg 2x" src="../images/img_1.jpg"
+                                alt="Михайло Єрмаков"/>
+                            </picture>                           
                             <h3 class="team-title">Михайло Єрмаков</h3>
                             <p lang="en" class="team-position">UI Designer</p>
                             <ul class="team-soc-list">
@@ -512,7 +549,8 @@
                     
                     <div class="modul-politic-group">
                         <input type="checkbox" name="politic" id="politic" class="modal-politic-cgeck visually-hidden">
-                        <label for="politic" class="modal-politic-lable">Погоджуюся з розсилкою та приймаю&nbsp<span ><a href="./index.html" class="lable-part"> Умови договору</a></span></label>
+                        <label for="politic" class="modal-politic-lable">Погоджуюся з розсилкою та приймаю&nbsp
+                            <span ><a href="./index.html" class="lable-part"> Умови договору</a></span></label>
                     </div>
                     <button type="submit" class="modal-submit-button" >Відправити</button>
                 </div>                  

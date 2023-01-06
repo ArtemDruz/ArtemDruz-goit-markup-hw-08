@@ -17,12 +17,16 @@
 .modal {
     position: absolute;
     padding: 40px;
-    min-width: 528px;   
+    min-width: 95%;   
     background-color: #fff;
 
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+
+    @media screen and (min-width: 480px) {
+        min-width: 450px;
+    }
 }
 .modal-button {
     position: absolute;
@@ -125,9 +129,13 @@
     outline: none;
 }
 .modul-politic-group {
-    display: flex;
+    display: inline;
     justify-content: center;
     margin-bottom: 30px;
+
+    @media screen and (min-width: 768px) {
+        font-size: 12px;
+    }
 }
 .modal-politic-lable::before {
     content: '';
