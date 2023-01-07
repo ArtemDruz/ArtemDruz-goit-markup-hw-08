@@ -104,10 +104,13 @@
     margin-right: auto;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:not(:last-child) {
-        padding-bottom: 10px;
+        margin-bottom: 10px;
     }
     @media screen and (min-width: 768px) {
         font-size: 12px;
+    }
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
     }
 }
 .pad {
@@ -225,8 +228,20 @@ position: relative;
 .contact-li:not(:last-child) {
     margin-right: 40px;
 }
+
+
 }
+
+.div-menu-button {
+    position: absolute;
+    right: 15px;
+    z-index: 1;
+    top: 15px;
+
+}
+
 .menu-button {
+
     width: 100%;
     height: 100%;
     top: 0;
@@ -244,6 +259,7 @@ position: relative;
 
 .menu-button .icon-menu {
     display: none;
+    
 }
 
 .menu-button.is-open .icon-menu {
@@ -256,8 +272,9 @@ position: relative;
 
 .menu-container {
     display: none;
-
-
+    position: absolute;
+    top: 0;
+    
     background-color:#fff;
     padding: 20px;
     text-align: center;
@@ -269,7 +286,6 @@ position: relative;
     @media screen and (max-width:767px) {
         display: none;
         position: absolute;
-        top: 100%;
         left: 0;
         width: 100%;
     }

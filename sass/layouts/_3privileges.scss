@@ -45,6 +45,10 @@
     color: var(--second-text-color);
     line-height: 1.14;
     text-transform: uppercase;
+
+    @media screen and (max-width: 768px) {
+        text-align: center;
+    }
 }
 .privileges__text {
     color: var(--primary-text-color);
