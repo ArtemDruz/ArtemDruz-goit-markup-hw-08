@@ -27,6 +27,9 @@
     @media screen and (min-width: 480px) {
         min-width: 450px;
     }
+    @media screen and (min-width: 768px) {
+        min-width: 450px;
+    }
 }
 .modal-button {
     position: absolute;
@@ -131,12 +134,13 @@
 .modul-politic-group {
     display: inline;
     justify-content: center;
-    margin-bottom: 30px;
+    
     @media screen and (max-width: 768px) {
         font-size: 12px;
     }
-    @media screen and (min-width: 768px) {
-        font-size: 14px;
+    @media screen and (min-width: 768px) and (max-width: 1200px) {
+        font-size: 12px;
+        text-align: center;
     }
 }
 .modal-politic-lable::before {
@@ -167,7 +171,7 @@
     text-decoration: underline;
 }
 .modal-submit-button {
-
+    margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
     font-weight: 700;
